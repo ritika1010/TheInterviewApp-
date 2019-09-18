@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verifyOTP">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_marginTop="80dp"
+       android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the registered email address:"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:maxLength="4"
+        android:paddingTop="10dp"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="#6C5B7B"
+        android:textColor="@android:color/black"
+        android:onClick="verifyotp"/>
+</RelativeLayout>

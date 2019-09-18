@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forgot_pass">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#6C5B7B"
+        android:text="Forgot Password"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:padding="5sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the registered email address:"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+       />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_below="@id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:paddingTop="10dp"
+        android:inputType="textEmailAddress"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="#6C5B7B"
+        android:textColor="@android:color/black"
+        android:onClick="submit"/>
+
+</RelativeLayout>

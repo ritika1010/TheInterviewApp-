@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TheInterviewApp</string>
+    <string name="aboutapp">This is a basic interview app where users can give and upload their interviews sitting at their home. </string>
+</resources>

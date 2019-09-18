@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="80dp"
+    android:paddingTop="40dp"
+    android:paddingRight="80dp"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/name_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="50px"
+        android:text="Name*"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_loginet"
+        android:layout_marginTop="20px"
+        android:text="Email_id*"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/name_loginet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_login"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/email_loginet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_login"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+
+        />
+
+    <EditText
+        android:id="@+id/pass_loginet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass_login"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+    <TextView
+        android:id="@+id/pass_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_loginet"
+        android:layout_marginTop="20px"
+        android:text="Password"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mob_no_loginet"
+        android:layout_margin="20dp"
+        android:backgroundTint="#6C5B7B"
+        android:onClick="create_user"
+        android:text="Create User"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New User"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/mob_no_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass_loginet"
+        android:layout_marginTop="20px"
+        android:text="Mobile no*"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/mob_no_loginet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mob_no_login"
+        android:ems="10"
+        android:inputType="number" />
+</RelativeLayout>
